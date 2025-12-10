@@ -79,7 +79,7 @@ Assim, a tabela `servicos` funciona como um "depósito de entrada".
 
 #Codigo SQL
 
-```code
+```sql
 CREATE TABLE cliente (
     id SERIAL PRIMARY KEY,
     nome VARCHAR(100) NOT NULL,
@@ -157,5 +157,6 @@ CREATE TRIGGER trg_distribuir_dados
 AFTER INSERT ON servicos
 FOR EACH ROW
 EXECUTE FUNCTION distribuir_dados_servicos();
+
 
 
