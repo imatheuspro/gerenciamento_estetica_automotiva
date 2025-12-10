@@ -1,0 +1,73 @@
+#btnNovoServico {
+    -fx-background-color: blue;
+    -fx-text-fill: white;
+}
+#btnNovoServico:hover {
+    -fx-background-color: #4d79ff; 
+}
+
+#btnGerenClientes, #btnGerenVeiculos, #btnGerenServicos {
+    -fx-background-color: green;
+    -fx-text-fill: white;
+}
+#btnGerenClientes:hover, #btnGerenVeiculos:hover, #btnGerenServicos:hover {
+    -fx-background-color: #33cc33; 
+}
+
+#btnSairApp {
+    -fx-background-color: red;
+    -fx-text-fill: white;
+}
+#btnSairApp:hover {
+    -fx-background-color: #ff4d4d; 
+}
+.btnEdit {
+    -fx-background-color: #2e8bce;
+}
+.btnEdit:hover {
+    -fx-background-color: #52aef0;
+}
+
+
+.btnDelete {
+    -fx-background-color: #c0392b;
+}
+.btnDelete:hover {
+    -fx-background-color: #e74c3c;
+}
+
+.btnVoltar {
+    -fx-background-color: #6c6c6c;
+}
+.btnVoltar:hover {
+    -fx-background-color: #8f8f8f;
+}
+
+.campoTexto {
+    -fx-background-radius: 8;
+    -fx-padding: 6 8;
+    -fx-background-color: rgba(255,255,255,0.85);
+}
+
+
+.comboCampo {
+    -fx-background-radius: 8;
+    -fx-background-color: rgba(255,255,255,0.85);
+}
+.btnSalvar {
+    -fx-background-color: #2ecc71;
+    -fx-background-radius: 10;
+    -fx-cursor: hand;
+}
+.btnSalvar:hover {
+    -fx-background-color: #58d68d;
+}
+
+.btnCancelar {
+    -fx-background-color: #c0392b;
+    -fx-background-radius: 10;
+    -fx-cursor: hand;
+}
+.btnCancelar:hover {
+    -fx-background-color: #e74c3c;
+}
