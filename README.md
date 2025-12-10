@@ -77,22 +77,9 @@ Assim, a tabela `servicos` funciona como um "depósito de entrada".
 
 ---
 
-# ▶️ Como executar o projeto
-
-### 1. Configure o PostgreSQL  
-Crie o banco e execute o script SQL fornecido.
-
-### 2. Configure o JavaFX  
-Informe o caminho do JavaFX nas configurações do seu ambiente (VS Code / IntelliJ / terminal).
-
-### 3. Compile e execute  
-Use:
-
-```bash
-javac --module-path "C:/javafx/lib" --add-modules javafx.controls,javafx.fxml -d out src/**/*.java
-java --module-path "C:/javafx/lib" --add-modules javafx.controls,javafx.fxml -cp out App
----
 #Codigo SQL
+
+```code
 CREATE TABLE cliente (
     id SERIAL PRIMARY KEY,
     nome VARCHAR(100) NOT NULL,
@@ -170,4 +157,5 @@ CREATE TRIGGER trg_distribuir_dados
 AFTER INSERT ON servicos
 FOR EACH ROW
 EXECUTE FUNCTION distribuir_dados_servicos();
+
 
