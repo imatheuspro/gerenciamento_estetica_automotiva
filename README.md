@@ -1,4 +1,4 @@
-# 🚗 Sistema de Gerenciamento de Serviços Automotivos
+# 🚗 Sistema de Gerenciamento de uma Estética Automotiva
 
 Este projeto é um sistema desenvolvido em Java utilizando o padrão **MVC**, projeto pensado para auxiliar oficinas e estéticas automotivas no **cadastro de clientes, veículos e serviços realizados**, além de manter uma estrutura organizada de dados com integração a um banco PostgreSQL.
 
@@ -196,6 +196,7 @@ AFTER INSERT ON servicos
 FOR EACH ROW
 EXECUTE FUNCTION distribuir_dados_servicos();
 ```
+
 
 
 
