@@ -115,7 +115,7 @@ Assim, a tabela `servicos` funciona como um "depósito de entrada".
 
 ---
 
-#Codigo SQL
+##**Codigo SQL**
 
 ```sql
 CREATE TABLE cliente (
@@ -196,6 +196,7 @@ AFTER INSERT ON servicos
 FOR EACH ROW
 EXECUTE FUNCTION distribuir_dados_servicos();
 ```
+
 
 
 
