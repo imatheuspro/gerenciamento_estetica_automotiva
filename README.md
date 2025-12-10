@@ -1,7 +1,22 @@
 ﻿# gerenciamento_estetica_automotiva
 
+ 
+---
+
+# 🧩 Diagrama de Componentes
+
+<img width="1920" height="1080" alt="View" src="https://github.com/user-attachments/assets/77566d99-da73-4947-b4a6-d31cd62d1db9" />
 
 ---
+
+
+---
+
+# 🗃️ Diagrama de Entidade e Relacionamento (DER)
+
+<img width="1920" height="1080" alt="Cliente" src="https://github.com/user-attachments/assets/4b79de1f-f5dd-4138-ab03-09a1b892decc" />
+
+
 
 # 📑 Dicionário de Dados
 
@@ -158,6 +173,7 @@ AFTER INSERT ON servicos
 FOR EACH ROW
 EXECUTE FUNCTION distribuir_dados_servicos();
 ```
+
 
 
 
