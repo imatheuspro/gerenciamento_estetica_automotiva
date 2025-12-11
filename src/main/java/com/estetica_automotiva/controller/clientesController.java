@@ -33,24 +33,22 @@ public class clientesController {
     private ClienteDAO clienteDAO = new ClienteDAO();
     private Clientes clienteSelecionado = null;
 
-    private ObservableList<Clientes> listaClientes; // lista principal
+    private ObservableList<Clientes> listaClientes; 
 
     @FXML
     public void initialize() {
 
-        // Configurar colunas
         colNome.setCellValueFactory(new PropertyValueFactory<>("nome"));
         colTelefone.setCellValueFactory(new PropertyValueFactory<>("telefone"));
         colEmail.setCellValueFactory(new PropertyValueFactory<>("email"));
 
-        // Carregar dados + aplicar filtro
         carregarClientes();
         configurarFiltro();
     }
 
     private void carregarClientes() {
         listaClientes = FXCollections.observableArrayList(clienteDAO.listarTodos());
-        tabelaClientes.setItems(listaClientes); // base para o filtro
+        tabelaClientes.setItems(listaClientes); 
     }
 
     private void configurarFiltro() {
