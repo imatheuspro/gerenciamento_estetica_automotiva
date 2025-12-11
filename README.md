@@ -173,17 +173,15 @@ DECLARE
     novo_cliente_id INTEGER;
     novo_veiculo_id INTEGER;
 BEGIN
-    -- Inserir cliente
+
     INSERT INTO cliente (nome, telefone, email, cpf)
     VALUES (NEW.nome_cliente, NEW.telefone_cliente, NEW.email_cliente, NEW.cpf_cliente)
     RETURNING id INTO novo_cliente_id;
 
-    -- Inserir veículo
     INSERT INTO veiculo (cliente_id, placa, modelo, ano, categoria)
     VALUES (novo_cliente_id, NEW.placa, NEW.modelo, NEW.ano, NEW.categoria)
     RETURNING id INTO novo_veiculo_id;
 
-    -- Inserir serviço
     INSERT INTO servico (cliente_id,veiculo_id, tipo_servico, preco)
     VALUES (novo_cliente_id,novo_veiculo_id, NEW.tipo_servico, NEW.preco);
 
@@ -197,6 +195,7 @@ FOR EACH ROW
 EXECUTE FUNCTION distribuir_dados_servicos();
 ```
 ### Trabalho feito por: Matheus Alves e Kayron Nilton
+
 
 
 
