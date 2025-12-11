@@ -163,7 +163,7 @@ CREATE TABLE servicos (
     modelo VARCHAR(50),
     ano INTEGER,
     categoria VARCHAR(50),
-    tipo_servico VARCHAR(100), -- renomeado para bater com servico.tipo_servico
+    tipo_servico VARCHAR(100), 
     preco NUMERIC(10,2)
 );
 
@@ -197,6 +197,7 @@ FOR EACH ROW
 EXECUTE FUNCTION distribuir_dados_servicos();
 ```
 ### Trabalho feito por: Matheus Alves e Kayron Nilton
+
 
 
 
