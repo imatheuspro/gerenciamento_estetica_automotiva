@@ -34,9 +34,7 @@ Este projeto é um sistema desenvolvido em Java utilizando o padrão **MVC**, pr
 
 # 🗃️ Diagrama de Entidade e Relacionamento (DER)
 
-<img width="1920" height="1080" alt="Cliente" src="https://github.com/user-attachments/assets/4b79de1f-f5dd-4138-ab03-09a1b892decc" />
-
-
+<img width="1230" height="798" alt="Captura de tela 2025-12-11 000144" src="https://github.com/user-attachments/assets/019d5924-ba20-4586-b925-abe68b567e88" />
 
 # 📑 Dicionário de Dados
 
@@ -192,6 +190,7 @@ FOR EACH ROW
 EXECUTE FUNCTION distribuir_dados_servicos();
 ```
 ### Trabalho feito por: Matheus Alves e Kayron Nilton
+
 
 
 
