@@ -9,7 +9,6 @@ import javafx.scene.control.TextField;
 
 public class EditarVeiculoController {
 
-    // Objeto enviado pela outra tela
     public static Veiculos veiculoEmEdicao;
 
     @FXML private TextField campoModelo;
